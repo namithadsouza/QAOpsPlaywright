@@ -1,0 +1,168 @@
+[
+  {
+    "description": "",
+    "elements": [
+      {
+        "description": "",
+        "id": "ecommerce-website-validation;place-the-order-successfully(positive-scenario)",
+        "keyword": "Scenario",
+        "line": 4,
+        "name": "Place the order successfully(Positive scenario)",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 878191300
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 5,
+            "name": "I login to the ecommerce website with username \"namithadsouza99@gmail.com\" and password \"Namitha@98\"",
+            "match": {
+              "location": "tests\\steps\\ecommercesteps.ts:6"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 4021347400
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 6,
+            "name": "I add the product \"ZARA COAT 3\" to the cart",
+            "match": {
+              "location": "tests\\steps\\ecommercesteps.ts:16"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 8168148398
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 7,
+            "name": "verify that the product \"ZARA COAT 3\" is added to the cart",
+            "match": {
+              "location": "tests\\steps\\ecommercesteps.ts:22"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 2022832699
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 8,
+            "name": "I proceed to checkout and place the order",
+            "match": {
+              "location": "tests\\steps\\ecommercesteps.ts:28"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1391415999
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 9,
+            "name": "verify that the order is placed successfully",
+            "match": {
+              "location": "tests\\steps\\ecommercesteps.ts:35"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 350857700
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 1186605400
+            }
+          }
+        ],
+        "tags": [
+          {
+            "name": "@regression",
+            "line": 3
+          }
+        ],
+        "type": "scenario"
+      },
+      {
+        "description": "",
+        "id": "ecommerce-website-validation;invalid-login-to-ecommerce2-application(negative-scenario)l̥",
+        "keyword": "Scenario Outline",
+        "line": 18,
+        "name": "Invalid login to Ecommerce2 application(Negative scenario)l̥",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 999180499
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 13,
+            "name": "a login to Ecommerce2 application with \"anshikaw@gmail.com\" and \"Learning@830$3mK3\"",
+            "match": {
+              "location": "tests\\steps\\ecommercesteps.ts:41"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 3862163499
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 14,
+            "name": "Verify Error message is displayed",
+            "match": {
+              "location": "tests\\steps\\ecommercesteps.ts:56"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1937831799
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 586311299
+            }
+          }
+        ],
+        "tags": [
+          {
+            "name": "@smoke",
+            "line": 11
+          }
+        ],
+        "type": "scenario"
+      }
+    ],
+    "id": "ecommerce-website-validation",
+    "line": 1,
+    "keyword": "Feature",
+    "name": "Ecommerce Website validation",
+    "tags": [],
+    "uri": "tests\\features\\Ecommerce.feature"
+  }
+]
